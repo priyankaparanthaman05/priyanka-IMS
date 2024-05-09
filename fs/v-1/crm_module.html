@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Module</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>CRM Module</h1>
+
+        <div class="customer-section">
+            <h2>Customer Information Management</h2>
+            <form class="customer-details">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="customerEmail">Email:</label>
+                <input type="text" id="customerEmail" name="customerEmail">
+
+                <!-- Add more fields for customer information as needed -->
+
+                <div class="customer-actions">
+                    <button type="submit">Save Customer Information</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="customer-section">
+            <h2>Communication History</h2>
+            <div class="communication-history">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Subject</th>
+                        <th>Details</th>
+                    </tr>
+                    <!-- Display communication history data dynamically -->
+                </table>
+            </div>
+        </div>
+
+        <div class="customer-section">
+            <h2>Customer Segmentation and Profiling</h2>
+            <div class="customer-segmentation">
+                <label for="segmentation">Segmentation:</label>
+                <select id="segmentation" name="segmentation">
+                    <option value="segment1">Segment 1</option>
+                    <option value="segment2">Segment 2</option>
+                    <option value="segment3">Segment 3</option>
+                    <!-- Add more segmentation options as needed -->
+                </select>
+            </div>
+        </div>
+
+        <div class="customer-section">
+            <h2>Policy Recommendation Based on Customer Data</h2>
+            <div class="policy-recommendation">
+                <p>Based on the customer's profile, recommend appropriate policies here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

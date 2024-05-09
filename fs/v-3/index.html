@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px 10px 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Management System</h1>
+        <ul>
+            <li><a class="btn btn-primary" id="jqueryAlertButton" href="policy_management.html">Policy Management</a></li>
+            <li><a class="btn btn-primary" id="jqueryAlertButton" href="claims_management.html">Claims Management</a></li>
+            <li><a class="btn btn-primary" id="jqueryAlertButton" href="crm_module.html">CRM</a></li>
+            <li><a class="btn btn-primary" id="jqueryAlertButton" href="agent_broker_management.html">Agent/Broker Management</a></li>
+            <li><a class="btn btn-primary" id="jqueryAlertButton" href="billing_payment_module.html">Billing and Payment</a></li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery Alert Script -->
+    <script>
+        $(document).ready(function(){
+            // jQuery alert
+            $("#jqueryAlertButton").click(function(){
+                alert("Redirecting!");
+            });
+        });
+    </script>
+</body>
+</html>

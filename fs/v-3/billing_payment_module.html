@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing and Payment Module</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Billing and Payment Module</h1>
+
+        <div class="billing-section">
+            <h2>Premium Invoicing</h2>
+            <form class="billing-details">
+                <label for="invoiceNumber">Invoice Number:</label>
+                <input type="text" id="invoiceNumber" name="invoiceNumber" required>
+
+                <!-- Add more fields for billing details as needed -->
+
+                <div class="billing-actions">
+                    <button type="submit">Generate Invoice</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="billing-section">
+            <h2>Payment Processing</h2>
+            <div class="payment-processing">
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="online">Online Payment</option>
+                    <option value="offline">Offline Payment</option>
+                    <option value="recurring">Recurring Payment</option>
+                </select>
+
+                <!-- Add more fields for payment processing as needed -->
+            </div>
+        </div>
+
+        <div class="billing-section">
+            <h2>Payment History and Tracking</h2>
+            <div class="payment-history">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Invoice Number</th>
+                            <th>Payment Date</th>
+                            <th>Amount</th>
+                            <th>Payment Method</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Display payment history data dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="billing-section">
+            <h2>Late Payment Reminders and Penalty Calculation</h2>
+            <div class="late-payment-reminder">
+                <label for="reminder">Send Reminder:</label>
+                <select id="reminder" name="reminder">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <!-- Add more fields for late payment reminders as needed -->
+
+                <button type="button" onclick="sendReminder()">Send Reminder</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html> 

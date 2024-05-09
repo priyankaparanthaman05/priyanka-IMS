@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Module</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .customer-section {
+            margin-bottom: 20px;
+        }
+
+        .customer-section h2 {
+            color: #666;
+        }
+
+        .customer-details {
+            margin-bottom: 10px;
+        }
+
+        .customer-details label {
+            font-weight: bold;
+        }
+
+        .customer-details input[type="text"],
+        .customer-details textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .customer-actions {
+            text-align: center;
+        }
+
+        .customer-actions button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .customer-actions button:hover {
+            background-color: #45a049;
+        }
+
+        .communication-history {
+            margin-top: 10px;
+        }
+
+        .communication-history table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .communication-history th, .communication-history td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .communication-history th {
+            background-color: #f2f2f2;
+        }
+
+        .customer-segmentation {
+            margin-top: 10px;
+        }
+
+        .customer-segmentation label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .customer-segmentation select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .policy-recommendation {
+            margin-top: 10px;
+        }
+
+        .policy-recommendation p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CRM Module</h1>
+
+        <div class="customer-section">
+            <h2>Customer Information Management</h2>
+            <form class="customer-details">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="customerEmail">Email:</label>
+                <input type="text" id="customerEmail" name="customerEmail">
+
+                <!-- Add more fields for customer information as needed -->
+
+                <div class="customer-actions">
+                    <button type="submit">Save Customer Information</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="customer-section">
+            <h2>Communication History</h2>
+            <div class="communication-history">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Subject</th>
+                        <th>Details</th>
+                    </tr>
+                    <!-- Display communication history data dynamically -->
+                </table>
+            </div>
+        </div>
+
+        <div class="customer-section">
+            <h2>Customer Segmentation and Profiling</h2>
+            <div class="customer-segmentation">
+                <label for="segmentation">Segmentation:</label>
+                <select id="segmentation" name="segmentation">
+                    <option value="segment1">Segment 1</option>
+                    <option value="segment2">Segment 2</option>
+                    <option value="segment3">Segment 3</option>
+                    <!-- Add more segmentation options as needed -->
+                </select>
+            </div>
+        </div>
+
+        <div class="customer-section">
+            <h2>Policy Recommendation Based on Customer Data</h2>
+            <div class="policy-recommendation">
+                <p>Based on the customer's profile, recommend appropriate policies here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

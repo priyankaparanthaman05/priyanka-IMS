@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Management Module</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .claim-section {
+            margin-bottom: 20px;
+        }
+
+        .claim-section h2 {
+            color: #666;
+        }
+
+        .claim-details {
+            margin-bottom: 10px;
+        }
+
+        .claim-details label {
+            font-weight: bold;
+        }
+
+        .claim-details input[type="text"],
+        .claim-details textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .claim-actions {
+            text-align: center;
+        }
+
+        .claim-actions button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .claim-actions button:hover {
+            background-color: #45a049;
+        }
+
+        .document-upload {
+            margin-top: 10px;
+        }
+
+        .document-upload input[type="file"] {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Claims Management Module</h1>
+
+        <div class="claim-section">
+            <h2>Claim Registration</h2>
+            <form class="claim-details">
+                <label for="claimNumber">Claim Number:</label>
+                <input type="text" id="claimNumber" name="claimNumber" required>
+
+                <label for="claimDetails">Claim Details:</label>
+                <textarea id="claimDetails" name="claimDetails" rows="4" required></textarea>
+
+                <div class="claim-actions">
+                    <!-- Add an ID to the button for JavaScript -->
+                    <button type="submit" id="registerClaimBtn">Register Claim</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="claim-section">
+            <h2>Claim Processing Workflow</h2>
+            <!-- Display claim processing workflow information -->
+        </div>
+
+        <div class="claim-section">
+            <h2>Document Management</h2>
+            <div class="document-upload">
+                <h3>Upload Documents</h3>
+                <input type="file" id="document" name="document" accept=".pdf, .doc, .docx">
+                <!-- Add more input fields or a file upload component as needed -->
+            </div>
+            <!-- Display document verification and storage information -->
+        </div>
+
+        <div class="claim-section">
+            <h2>Claim Settlement and Payment Processing</h2>
+            <!-- Display claim settlement and payment processing information -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for handling form submission -->
+    <script>
+        // JavaScript function to handle form submission
+        $(document).ready(function(){
+            $('#registerClaimBtn').click(function(){
+                // Prevent default form submission
+                event.preventDefault();
+                // You can add your logic here for form submission, e.g., AJAX request
+                alert('Claim Registered Successfully!');
+            });
+        });
+    </script>
+</body>
+</html>

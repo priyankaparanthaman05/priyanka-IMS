@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Management Module</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Claims Management Module</h1>
+
+        <div class="claim-section">
+            <h2>Claim Registration</h2>
+            <form class="claim-details">
+                <label for="claimNumber">Claim Number:</label>
+                <input type="text" id="claimNumber" name="claimNumber" required>
+
+                <label for="claimDetails">Claim Details:</label>
+                <textarea id="claimDetails" name="claimDetails" rows="4" required></textarea>
+
+                <div class="claim-actions">
+                    <button type="submit">Register Claim</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="claim-section">
+            <h2>Claim Processing Workflow</h2>
+        </div>
+
+        <div class="claim-section">
+            <h2>Document Management</h2>
+            <div class="document-upload">
+                <h3>Upload Documents</h3>
+                <input type="file" id="document" name="document" accept=".pdf, .doc, .docx">
+                <!-- Add more input fields or a file upload component as needed -->
+            </div>
+            <!-- Display document verification and storage information -->
+        </div>
+
+        <div class="claim-section">
+            <h2>Claim Settlement and Payment Processing</h2>
+            <!-- Display claim settlement and payment processing information -->
+        </div>
+    </div>
+</body>
+</html>

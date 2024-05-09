@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Management Module</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .policy-section {
+            margin-bottom: 20px;
+        }
+
+        .policy-section h2 {
+            color: #666;
+        }
+
+        .policy-details {
+            margin-bottom: 10px;
+        }
+
+        .policy-details label {
+            font-weight: bold;
+        }
+
+        .policy-details input[type="text"],
+        .policy-details select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .policy-actions {
+            text-align: center;
+        }
+
+        .policy-actions button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .policy-actions button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Policy Management Module</h1>
+
+        <div class="policy-section">
+            <h2>Policy Creation</h2>
+            <form class="policy-details">
+                <label for="policyName">Policy Name:</label>
+                <input type="text" id="policyName" name="policyName" required>
+                
+                <!-- Add more fields for policy details as needed -->
+
+                <div class="policy-actions">
+                    <!-- Add an ID to the button for JavaScript -->
+                    <button type="submit" id="createPolicyBtn">Create Policy</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="policy-section">
+            <h2>Policy Modification</h2>
+            <!-- Form for modifying existing policy details -->
+        </div>
+
+        <div class="policy-section">
+            <h2>Policy Cancellation</h2>
+            <!-- Form for canceling existing policies -->
+        </div>
+
+        <div class="policy-section">
+            <h2>Policy Coverage Details</h2>
+            <!-- Display policy coverage details -->
+        </div>
+
+        <div class="policy-section">
+            <h2>Premium Calculation and Billing</h2>
+            <!-- Display premium calculation and billing information -->
+        </div>
+
+        <div class="policy-section">
+            <h2>Policy Renewal Management</h2>
+            <!-- Display policy renewal management options -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

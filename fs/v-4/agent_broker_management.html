@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent/Broker Management Module</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .agent-section {
+            margin-bottom: 20px;
+        }
+
+        .agent-section h2 {
+            color: #666;
+        }
+
+        .agent-details {
+            margin-bottom: 10px;
+        }
+
+        .agent-details label {
+            font-weight: bold;
+        }
+
+        .agent-details input[type="text"],
+        .agent-details select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .agent-actions {
+            text-align: center;
+        }
+
+        .agent-actions button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .agent-actions button:hover {
+            background-color: #45a049;
+        }
+
+        .commission-management {
+            margin-top: 10px;
+        }
+
+        .commission-management table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .commission-management th, .commission-management td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .commission-management th {
+            background-color: #f2f2f2;
+        }
+
+        .performance-tracking {
+            margin-top: 10px;
+        }
+
+        .performance-tracking table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .performance-tracking th, .performance-tracking td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .performance-tracking th {
+            background-color: #f2f2f2;
+        }
+
+        .training-tracking {
+            margin-top: 10px;
+        }
+
+        .training-tracking table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .training-tracking th, .training-tracking td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .training-tracking th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agent/Broker Management Module</h1>
+
+        <div class="agent-section">
+            <h2>Agent/Broker Registration and Onboarding</h2>
+            <form method="post" class="agent-details" id="form">
+                <label>Agent/Broker Name:</label>
+                <input type="text" id="agentName" name="agentName" required>
+                <div class="agent-actions">
+                    <button type="submit" id="submit-btn">Register Agent/Broker</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="agent-section">
+            <h2>Commission Calculation and Management</h2>
+            <div class="commission-management">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Agent/Broker</th>
+                            <th>Policy</th>
+                            <th>Commission Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Display commission data dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="agent-section">
+            <h2>Performance Tracking and Reporting</h2>
+            <div class="performance-tracking">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Agent/Broker</th>
+                            <th>Policy Sales</th>
+                            <th>Revenue Generated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Display performance data dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="agent-section">
+            <h2>Training and Certification Tracking</h2>
+            <div class="training-tracking">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Agent/Broker</th>
+                            <th>Training Completed</th>
+                            <th>Certification Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    window.onload = function() {
+        console.log("Window and resources are loaded!");
+    }
+    const form = document.getElementById('form');
+
+form.addEventListener('submit', async event => {
+//   event.preventDefault();
+  const data = new FormData(form);
+  const d =Array.from(data);
+//   console.log(Array.from(data));
+  console.log((d[0][1]));
+  alert(`${d[0][1]} registered successfully`)
+
+});
+
+</script>
+
+</body>
+</html>
